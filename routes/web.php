@@ -20,3 +20,4 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/auth.php';
 Route::get('/logout', [AdminController::class, 'AdminLogout'])->name('admin.logout');
+Route::get('/admin/profile', [AdminController::class, 'AdminProfile'])->name('admin.profile');
